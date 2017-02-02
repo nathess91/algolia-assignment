@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Restaurant Locator - by Algolia</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <header>
+        <div clas="form-control" id="search-input"></div>
+        <div id="search-input-icon"></div>
+    </header>
+
+    <main>
+      <div id="left-column">
+        <div id="food_type" class="facet"></div>
+        <div id="stars_count" class="facet"></div>
+        <div id="payment_options" class="facet"></div>
+      </div>
+      <div id="right-column">
+        <div id="stats"></div>
+        <div id="hits"></div>
+        <div id="pagination"></div>
+      </div>
+    </main>
+
+    <script type="text/html" id="hit-template">
+      <div class="hit">
+        <div class="hit-image">
+          <img src="{{image_url}}" alt="{{name}}">
+        </div>
+        <div class="hit-content">
+          <h4 class="hit-name">{{name}}</h4>
+          <p class="hit-stars_count"><span class="stars">{{stars_count}}</span> ({{reviews_count}} reviews)</p>
+          <p>{{food_type}} | {{area}} | {{price_range}}</p>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/html" id="no-results-template">
+      <div id="no-results-message">
+        <p>We didn't find any results for the search <em>"{{query}}"</em>.</p>
+        <a href="." class="clear-all">Clear search</a>
+      </div>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+    <script src="http://twitter.github.com/hogan.js/builds/3.0.1/hogan-3.0.1.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
+</html>
