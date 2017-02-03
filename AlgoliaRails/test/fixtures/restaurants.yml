@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  objectID: 1
+  food_type: MyString
+  stars_count: 9.99
+  reviews_count: 1
+  neighborhood: MyString
+  phone_number: MyString
+  price_range: MyString
+  dining_style: MyString
+  name: MyString
+  address: MyString
+  area: MyString
+  city: MyString
+  country: MyString
+  image_url: MyString
+  mobile_reserve_url: MyString
+  payment_options: 1
+  phone: MyString
+  postal_code: MyString
+  price: 1
+  reserve_url: MyString
+  state: MyString
+  _geoloc: MyString
+
+two:
+  objectID: 1
+  food_type: MyString
+  stars_count: 9.99
+  reviews_count: 1
+  neighborhood: MyString
+  phone_number: MyString
+  price_range: MyString
+  dining_style: MyString
+  name: MyString
+  address: MyString
+  area: MyString
+  city: MyString
+  country: MyString
+  image_url: MyString
+  mobile_reserve_url: MyString
+  payment_options: 1
+  phone: MyString
+  postal_code: MyString
+  price: 1
+  reserve_url: MyString
+  state: MyString
+  _geoloc: MyString

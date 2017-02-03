@@ -1,0 +1,38 @@
+<div class="container white">
+    <div class="input-group search">
+      <input class="form-control" type="text" placeholder="Search for Restaurants by Name, Cuisine, Location"></input>
+    </div>
+
+      <div class="col-lg-3 pull-left content">
+        <div class="row">
+          <h5>Cuisine/Food Type</h5>
+          <div id="cuisine">
+            <div class="pull-left">
+              <p id="italian" class="cuisine-name">Italian <%= @restaurants.where(food_type: "Italian").count %></p>
+              <p class="cuisine-name">American</p>
+              <p class="cuisine-name">Californian</p>
+              <p class="cuisine-name">French</p>
+              <p class="cuisine-name">Seafood</p>
+              <p class="cuisine-name">Japanese</p>
+              <p class="cuisine-name">Indian</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h5>Rating</h5>
+        </div>
+        <div class="row">
+          <h5>Payment Options</h5>
+        </div>
+      </div>
+
+      <div class="col-lg-8 pull-right content">
+        <h5>x results found in x seconds</h5><hr>
+        <div id="results">
+        </div>
+        <div class="row">
+          <button class="btn btn-default center-block"><b>Show More</b></button>
+        </div>
+      </div>
+
+  </div>
